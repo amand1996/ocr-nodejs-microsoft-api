@@ -16,7 +16,7 @@ request({
         'Ocp-Apim-Subscription-Key':'<Subscription Key>'
     },
     
-    body: "{'url':'<URL TO THE IMAGE OF THE PAN CARD/DOCUMENT>'}",
+    body: "{'url':'<URL TO THE IMAGE OF THE DOCUMENT>'}",
     
 }, function(error, response, body){
     if(error) {
@@ -35,13 +35,6 @@ request({
             }
             
             console.log(str);
-            
-            var arr = str.split("\n");
-            
-            console.log("Name: " + arr[1]);
-            console.log("Father's Name: " + arr[2]);
-            console.log("Date of Birth: " + arr[3]);
-            console.log("Permanent Account Number: " + arr[5]);
             
     }
 });
